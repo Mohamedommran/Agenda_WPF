@@ -1,0 +1,22 @@
+﻿<Page x:Class="Agenda_WPF.customer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="customer">
+    <Grid>
+        <DataGrid x:Name="customerDG" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Customer Id" Binding="{Binding IdCustomer}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="E-mail" Binding="{Binding Mail}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Budget" Binding="{Binding Budget}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Page>
